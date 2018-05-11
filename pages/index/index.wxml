@@ -1,0 +1,3 @@
+<form bind:submit="submitTest" report-submit="true">
+    <button form-type="submit">发送模板消息</button>
+ </form>
