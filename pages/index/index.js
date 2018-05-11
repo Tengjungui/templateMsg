@@ -8,12 +8,12 @@ Page({
  
   submitTest (e){
     let formId=e.detail.formId; //formId在真机上才能获取
-    let accessToken = '9_q0ET_NVBMiJN7Fp_fNV-oiYYcQ85fdkzD15b5FixMmJUjXTKAY5LAXHBAGeot3TV85H8p7PAf-kWdkNWz0RniQzO5kyq8YsftfAszGA-EE8CE30sWPipeGSBtr0KHh5ENmN13t7QPrFuF_Z6PIMeAAAGZD'; //填写你自己的access_token，
+    let accessToken = '9_q0ET_7PAf-kWdkNWz0RniQzO5kyq8YsftfNVBMiJN7F3TV85H8pAszGA-EE8CE3PrFuF_Z6PIp_fNV-oiYYcQ85fdkzD15b5FixMmJUjXTKAY5LAXHBAGeotMeAAAGZD'; //填写你自己的access_token，
     let accessTokenUrl = `https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=${accessToken}`;
    
    let jsonData={
      touser: wx.getStorageSync('user').openid,
-     template_id: 'dXvZ6DB61zVGLO8h12_ygatRVJA60hw-iulmMWIB8nw', //填写你自己的模板ID
+     template_id: 'dXmMWIB8234O8h12vZ6VGLwer54DB61zygatR-iul_nw', //填写你自己的模板ID
      form_id: formId, 
      page: 'pages/index/index',
      data: {
@@ -57,8 +57,8 @@ Page({
 
   onLoad () {
     
-    let appId = 'wx860d2f50ac10d823';  //填写你自己的AppID
-    let appSecret = '711f2af1aebf6199224dd6c6711055c9';  //填写你自己的AppSecret 
+    let appId = 'wx465a7sdfwerqw31';  //填写你自己的AppID
+    let appSecret = '711f2cafdbf1ae2246671105519924dd6c29';  //填写你自己的AppSecret 
 
     //获取openid  
     let user = wx.getStorageSync('user') || {};
